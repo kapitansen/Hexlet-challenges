@@ -14,7 +14,6 @@ const propertyActions = [
     name: 'children',
     check: arg => arg instanceof Array,
     process: (children, f) => {
-    	//console.log(f(children));
     	return children.map(f)},
   },
   {
@@ -49,3 +48,5 @@ const render = data => {
 }
 
 export {render, parse};
+
+// END
